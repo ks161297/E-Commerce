@@ -1,7 +1,7 @@
 import {Route} from "react-router-dom"
-import ListaProductosView from "./views/Productos/ListaProductosView"
-import CrearProductoView from "./views/Productos/CrearProductoView"
-import EditarProductoView from "./views/Productos/EditarProductoView"
+import ListaProductosView from "./views/ListaProductosView"
+import CrearProductoView from "./views/CrearProductoView"
+import EditarProductoView from "./views/EditarProductoView"
 
 export default function Routes() {
     return (
