@@ -38,7 +38,7 @@ export default function CearProductoView() {
         e.preventDefault()
         try {
             const urlArchivo = await subirArchivo(imagen)
-            await crearProducto({...value, prod2_imagen: urlArchivo})
+            await crearProducto({...value, prod_imagen: urlArchivo})
             await Swal.fire({
                 icon:'success',
                 title:'Producto creado!',
