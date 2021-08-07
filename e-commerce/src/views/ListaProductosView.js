@@ -31,6 +31,8 @@ export default function ListaProductosView() {
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Descripción</th>
+                        <th>Colores</th>
+                        <th>Materiales</th>
                         <th>Stock</th>
                         <th>Acciones</th>
                     </tr>
@@ -41,6 +43,8 @@ export default function ListaProductosView() {
                             <td>{prod.prod_nombre}</td>
                             <td>{prod.prod_precio}</td>
                             <td>{prod.prod_descripcion}</td>
+                            <th>{prod.prod_color}</th>
+                            <th>{prod.prod_material}</th>
                             <td>{prod.prod_stock}</td>
                             <td>
                                 <Link className="btn btn-warning btn-sm" to={`/editar/${prod.prod2_id}`}>
