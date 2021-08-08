@@ -4,7 +4,7 @@ import {Link as LinkS} from 'react-scroll'
 import { FaBars, FaCartArrowDown, FaHeart, FaUser, FaUserPlus } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-    background: #AC5D5D;
+    background: ${({ scrolNav }) => (scrolNav ? '#AC5D5D' : 'transparent')};
     height: 80px;
     margint-top: -80px;
     display: flex;

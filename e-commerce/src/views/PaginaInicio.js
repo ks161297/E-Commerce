@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
 import Services from '../components/Services'
+import Products from '../components/Products'
+import Footer from '../components/Footer'
 
 
 
@@ -19,7 +21,9 @@ const PaginaInicio = () => {
           <Navbar toggle={toggle}/>  
           <HeroSection/>
           <InfoSection/>
+          <Products/>
           <Services/>
+          <Footer/>
         </>
     )
 }

@@ -1,13 +1,13 @@
 import im1 from '../../images/svg1.svg'
 import im2 from '../../images/svg-4.svg'
 import im3 from '../../images/svg-2.svg'
-import { ServicesContainer, ServicesH1,StarIcon, ServicesWrapper,ServicesIcon, ServicesH2, ServicesP, ServicesCard } from './ServicesElements'
+import { ServicesContainer, ServicesH1,SparIcon, ServicesWrapper,ServicesIcon, ServicesH2, ServicesP, ServicesCard } from './ServicesElements'
 
 const Services = () => {
     return (
         <ServicesContainer>
             <ServicesH1>¿Qué puedes encontrar aquí?
-                <StarIcon/>
+                <SparIcon/>
             </ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>

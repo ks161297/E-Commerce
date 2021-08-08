@@ -1,14 +1,33 @@
-import {FaBars} from 'react-icons/fa'
+import { useState, useEffect } from 'react'
 import {Nav, NavbarContainer, NavLogo, Navimg,  MenuIcon, MobileIcon, NavMenu, NavItem,NavLinks, NavBtn, NavBtnLink, NavIngr,NavRegi,Navlist,Navcar} from './NavbarElements'
 import  logo from '../../images/logoprincipal.png'
-
+import { IconContext } from 'react-icons/lib'
+import { animateScroll as scroll} from 'react-scroll'
 
 const Navbar = ({toggle}) => {
+
+    const [scrollNav, setScrollNav] = useState(false)
+    const changeNav = () => {
+        if(window.scrollY >= 40){
+            setScrollNav(true)
+        }else{
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <>
-           <Nav>
+        <IconContext.Provider value={{color:'#fff'}}>
+           <Nav scrollNav={scrollNav}>
                <NavbarContainer>
-                   <NavLogo to='/'> 
+                   <NavLogo to='/' onClick={toggleHome}> 
                    <Navimg 
                         src={logo} 
                         width="30"
@@ -21,16 +40,36 @@ const Navbar = ({toggle}) => {
                    </MobileIcon>
                    <NavMenu>
                        <NavItem>
-                           <NavLinks to='about'>Inicio</NavLinks>
+                           <NavLinks to='about'
+                           smooth={true}
+                           duration={10}
+                           spy={true}
+                           exact='true'
+                           offset={-80}>Inicio</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Tienda'>Tienda</NavLinks>
+                           <NavLinks to='Tienda'
+                           smooth={true}
+                           duration={10}
+                           spy={true}
+                           exact='true'
+                           offset={-80}>Tienda</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Nosotros'>Tips</NavLinks>
+                           <NavLinks to='Nosotros'
+                           smooth={true}
+                           duration={10}
+                           spy={true}
+                           exact='true'
+                           offset={-80}>Tips</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Contáctanos'>Nosotros</NavLinks>
+                           <NavLinks to='Contáctanos'
+                           smooth={true}
+                           duration={10}
+                           spy={true}
+                           exact='true'
+                           offset={-80}>Nosotros</NavLinks>
                        </NavItem>
                     
                    </NavMenu>
@@ -51,6 +90,7 @@ const Navbar = ({toggle}) => {
                
                </NavbarContainer>
            </Nav>
+        </IconContext.Provider>
         </>
     )
 }
