@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { obtenerProductos } from "../services/productosService";
 
 export default function ListaProductosView() {
@@ -8,8 +8,8 @@ export default function ListaProductosView() {
 
     const getProductos = async () => {
         try {
-            const poductosObtenidos = await obtenerProductos()
-            setProductos(poductosObtenidos)
+            const productosObtenidos = await obtenerProductos()
+            setProductos(productosObtenidos)
         } catch (error) {
             console.log(error)
         }
@@ -22,7 +22,7 @@ export default function ListaProductosView() {
     return (
         <div>
             <h1>Catálogo de Productos</h1>
-            <Link>
+            <Link className="btn btn-primary btn-lg my-2" to='/crear'>
                 <i className="fas fa-plus"></i> Registrar Producto
             </Link>
             <table className="table">
@@ -38,25 +38,23 @@ export default function ListaProductosView() {
                     </tr>
                 </thead>
                 <tbody>
-                    {productos.map((prod, i) =>{
+                    {productos.map((prod, i) =>(
                         <tr key={i}>
                             <td>{prod.prod_nombre}</td>
                             <td>{prod.prod_precio}</td>
                             <td>{prod.prod_descripcion}</td>
-                            <th>{prod.prod_color}</th>
-                            <th>{prod.prod_material}</th>
+                            <td>{prod.prod_color}</td>
+                            <td>{prod.prod_material}</td>
                             <td>{prod.prod_stock}</td>
                             <td>
-                                <Link className="btn btn-warning btn-sm" to={`/editar/${prod.prod2_id}`}>
+                                <Link className="btn btn-warning btn-sm" to={`/editar/${prod.prod_id}`}>
                                     <i className="fas fa-edit"></i>
                                 </Link>
                             </td>
                         </tr>
-                    })}
+                    ))}
                 </tbody>
             </table>
-
-
         </div>
     )
 }

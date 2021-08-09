@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useHistory} from "react-router-dom"
 import Swal from "sweetalert2"
 
-import {crearProducto,subirArchivo} from "../services/productosService"
+import { crearProducto,subirArchivo} from "../services/productosService"
 import FormProducto from "../components/FormProducto"
 
 
@@ -58,7 +58,7 @@ export default function CearProductoView() {
 
     return (
         <div>
-            <h1>Crear Producto View</h1>
+            <h1>Registrar Producto </h1>
 
             <FormProducto 
                 value={value} 

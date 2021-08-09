@@ -22,8 +22,8 @@ export default function EditarProductoView() {
 
     const getProducto = async () =>{
         try {
-            const prodcutoObtenido = await obtenerProductoPorId(id)
-            setValue({...prodcutoObtenido})
+            const productoObtenido = await obtenerProductoPorId(id)
+            setValue({...productoObtenido})
         } catch (error) {
             console.log(error)
         }
