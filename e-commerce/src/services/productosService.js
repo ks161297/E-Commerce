@@ -45,16 +45,13 @@ const editarProducto = async (productoEditado,id) =>{
     }
 }
 
-const eliminarProducto = async (productoElimnado,id) =>{
-    try {
-        const headers = {
-            "Content-Type": "application/json"
-        }
-        let {data} = await axios.delete(`${URL}/${id}`,productoElimnado)
-        return data
-    } catch (error) {
-        throw erro
-    }
+const eliminarProducto = async (id) =>{
+    // try {
+    //     let {data} = await axios.delete(`${URL}/${id}`)
+    //     return data
+    // } catch (error) {
+    //     throw error
+    // }
 }
 
 

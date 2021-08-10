@@ -50,7 +50,7 @@ export default function ListaProductosView() {
                                 <Link className="btn btn-warning btn-sm" to={`/editar/${prod.prod_id}`}>
                                     <i className="fas fa-edit"></i>
                                 </Link>
-
+                                {"   "}
                                 <Link className="btn btn-danger btn-sm">
                                     <i className="fas fa-trash-alt"></i>
                                 </Link>
