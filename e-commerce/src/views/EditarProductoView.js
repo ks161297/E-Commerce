@@ -11,6 +11,8 @@ export default function EditarProductoView() {
     const [value,setValue] = useState({
         prod_nombre:'',
         prod_descripcion:'',
+        prod_color:'',
+        prod_material:'',
         prod_precio:0,
         prod_stock:0,
         prod_oferta:false,
@@ -21,7 +23,7 @@ export default function EditarProductoView() {
     const getProducto = async () =>{
         try {
             const productoObtenido = await obtenerProductoPorId(id)
-            setValue({...productooObtenido})
+            setValue({...productoObtenido})
         } catch (error) {
             console.log(error)
         }

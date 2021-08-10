@@ -12,6 +12,8 @@ export default function CearProductoView() {
         prod_nombre:'',
         prod_descripcion:'',
         prod_precio:0,
+        prod_color:'',
+        prod_material:'',
         prod_stock:0,
         prod_oferta:false,
     })
@@ -56,7 +58,7 @@ export default function CearProductoView() {
 
     return (
         <div>
-            <h1>Registrar Producto </h1>
+            <h1 className="text-center" style={{color:'#BF7C7C'}}>Registrar Producto</h1>
 
             <FormProducto 
                 value={value} 

@@ -45,6 +45,18 @@ const editarProducto = async (productoEditado,id) =>{
     }
 }
 
+const eliminarProducto = async (productoElimnado,id) =>{
+    try {
+        const headers = {
+            "Content-Type": "application/json"
+        }
+        let {data} = await axios.delete(`${URL}/${id}`,productoElimnado)
+        return data
+    } catch (error) {
+        throw erro
+    }
+}
+
 
 const subirArchivo = (imagen) => {
     return new Promise((resolve, reject) => {
@@ -69,5 +81,6 @@ export{
     crearProducto,
     obtenerProductoPorId,
     editarProducto,
+    eliminarProducto,
     subirArchivo
 }
