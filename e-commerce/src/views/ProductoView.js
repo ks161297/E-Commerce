@@ -2,7 +2,7 @@ import {useState, useEffect, useContext} from 'react'
 // import { CarritoContext } from '../context/carritoContext'
 import {useParams} from "react-router-dom"
 import {obtenerProductosPorId } from '../services/productoService'
-// import Loading from '../components/Loading'
+import Loading from '../components/Loading'
 import Swal from "sweetalert2"
 import {useHistory} from 'react-router'
 
