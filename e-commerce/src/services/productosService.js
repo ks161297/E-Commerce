@@ -24,7 +24,7 @@ const crearProducto = async (nuevoProducto) => {
     }
 }
 
-const obtenerProductoPorId = async (id) => {
+const obtenerProductosPorId = async (id) => {
     try {
         let {data} = await axios.get(`${URL}/${id}`)
         return data
@@ -76,7 +76,7 @@ const subirArchivo = (imagen) => {
 export{
     obtenerProductos,
     crearProducto,
-    obtenerProductoPorId,
+    obtenerProductosPorId,
     editarProducto,
     eliminarProducto,
     subirArchivo

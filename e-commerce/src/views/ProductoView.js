@@ -1,14 +1,14 @@
 import {useState, useEffect, useContext} from 'react'
 // import { CarritoContext } from '../context/carritoContext'
 import {useParams} from "react-router-dom"
-import {obtenerProductosPorId } from '../services/productoService'
+import {obtenerProductosPorId } from '../services/productosService'
 import Loading from '../components/Loading'
 import Swal from "sweetalert2"
 import {useHistory} from 'react-router'
 
 export default function ProductoView() {
     const [producto, setProductos] = useState({})
-    // const [cargando, setCargando] = useState(true)
+    const [cargando, setCargando] = useState(true)
 
     const {id} = useParams()
 

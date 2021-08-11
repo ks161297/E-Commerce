@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom"
 import { useHistory } from 'react-router-dom'
 import Swal from "sweetalert2"
 
-import { editarProducto, obtenerProductoPorId, subirArchivo } from '../services/productosService'
+import { editarProducto, obtenerProductosPorId, subirArchivo } from '../services/productosService'
 import FormProducto from '../components/FormProducto'
 
 let imagen;
@@ -22,7 +22,7 @@ export default function EditarProductoView() {
 
     const getProducto = async () =>{
         try {
-            const productoObtenido = await obtenerProductoPorId(id)
+            const productoObtenido = await obtenerProductosPorId(id)
             setValue({...productoObtenido})
         } catch (error) {
             console.log(error)
