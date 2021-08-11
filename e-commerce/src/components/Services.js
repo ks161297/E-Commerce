@@ -1,7 +1,7 @@
-import im1 from '../../images/svg1.svg'
-import im2 from '../../images/svg-4.svg'
-import im3 from '../../images/svg-2.svg'
-import { ServicesContainer, ServicesH1,SparIcon, ServicesWrapper,ServicesIcon, ServicesH2, ServicesP, ServicesCard } from './ServicesElements'
+import im1 from '../images/svg1.svg'
+import im2 from '../images/svg-4.svg'
+import im3 from '../images/svg-2.svg'
+import { ServicesContainer, ServicesH1,SparIcon, ServicesWrapper,ServicesIcon, ServicesH2, ServicesP, ServicesCard } from './general'
 
 const Services = () => {
     return (

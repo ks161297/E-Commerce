@@ -28,4 +28,4 @@ const PaginaInicio = () => {
     )
 }
 
-export default PaginaInicio
+export default  PaginaInicio 

@@ -1,5 +1,5 @@
-import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine,MenuIcon,Heading, Subtitle,BtnWrap,Column2,ImgWrap,Img, Button } from "./InfoElements"
-import p1 from '../../images/svg-3.svg'
+import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine,MenuIconS,Heading, Subtitle,BtnWrap,Column2,ImgWrap,Img, Button } from './general'
+import p1 from '../images/svg-3.svg'
 
 
 const InfoSection = () => {
@@ -11,7 +11,7 @@ const InfoSection = () => {
                       <Column1>
                       <TextWrapper>
                           <TopLine>Handmade
-                            <MenuIcon />
+                            <MenuIconS />
                           </TopLine>
                           <Heading>¿Estás buscando algo especial?</Heading>
                           <Subtitle>Aqui vas a encontrar los mejores regalos para esa persona especial, ¿Te interesa? </Subtitle>

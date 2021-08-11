@@ -1,8 +1,7 @@
-import im1 from '../../images/pc1.jpg'
-import im2 from '../../images/pc2.jpg'
-import im3 from '../../images/pc3.jpg'
-import { ProductsContainer, ProductsH1,StarIcon, ProductsWrapper,ProductsIcon, ProductsH2, ProductsP, ProductsCard } from './ProductsElements'
-
+import im1 from '../images/pc1.jpg'
+import im2 from '../images/pc2.jpg'
+import im3 from '../images/pc3.jpg'
+import { ProductsContainer, ProductsH1,StarIcon, ProductsWrapper,ProductsIcon, ProductsH2, ProductsP, ProductsCard } from './general'
 const Products = () => {
     return (
         <ProductsContainer>

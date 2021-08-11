@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import {Nav, NavbarContainer, NavLogo, Navimg,  MenuIcon, MobileIcon, NavMenu, NavItem,NavLinks, NavBtn, NavBtnLink, NavIngr,NavRegi,Navlist,Navcar} from './NavbarElements'
-import  logo from '../../images/logoprincipal.png'
+import {Nav, NavbarContainer, NavLogo, Navimg,  MenuIcon, MobileIcon, NavMenu, NavItem,NavLinks, NavBtn, NavBtnLink, NavIngr,NavRegi,Navlist,Navcar} from './general'
+import logo from '../images/logoprincipal.png'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll} from 'react-scroll'
 
@@ -48,7 +48,7 @@ const Navbar = ({toggle}) => {
                            offset={-80}>Inicio</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Tienda'
+                           <NavLinks to='/productos'
                            smooth={true}
                            duration={10}
                            spy={true}
@@ -56,7 +56,7 @@ const Navbar = ({toggle}) => {
                            offset={-80}>Tienda</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Nosotros'
+                           <NavLinks to='/productos'
                            smooth={true}
                            duration={10}
                            spy={true}
