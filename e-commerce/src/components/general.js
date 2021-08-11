@@ -8,6 +8,7 @@ import { FaSplotch } from 'react-icons/fa'
 import {HiSparkles} from 'react-icons/hi'
 import { HiGift } from 'react-icons/hi'
 
+/*Navbar - Elementos*/
 
 export const Nav = styled.nav`
     background: ${({ scrolNav }) => (scrolNav ? '#AC5D5D' : 'transparent')};
@@ -23,7 +24,7 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     }
-` 
+`
 
 export const NavbarContainer = styled.div`
     background: #AC5D5D;
@@ -47,7 +48,7 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration:none;
-    &:hover { 
+    &:hover {
         color: #CDB9B9;
         transition: 0.2s ease-in-out;
     }
@@ -60,7 +61,7 @@ export const MenuIcon = styled(FaBars)`
     color: #fff;
     background: #AC5D5D;
     margin-top: -30px;
-` 
+`
 export const MobileIcon = styled.div`
     display: none;
     background: #AC5D5D;
@@ -105,7 +106,7 @@ export const NavLinks = styled(LinkR)`
     &.active {
         border-botton: 3px solid #01bf71
     }
-    &:hover { 
+    &:hover {
         color: #CDB9B9;
         transition: 0.2s ease-in-out;
     }
@@ -117,7 +118,7 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 768px){
         display: none;
     }
-` 
+`
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: #AC5D5D;
@@ -133,7 +134,7 @@ export const NavBtnLink = styled(LinkR)`
     text-decoaration: none;
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #AC5D5D;        
+        background: #AC5D5D;
     }
 `
 export const NavIngr = styled(FaUser)`
@@ -160,6 +161,9 @@ export const Navcar = styled(FaCartArrowDown)`
     height:15px;
     width: 15px;
 `
+
+/*Sidebar - Elementos*/
+
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 9900;
@@ -172,14 +176,14 @@ export const SidebarContainer = styled.aside`
     left: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};  
-    
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
 `
 
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
     background: #AC5D5D;
-` 
+`
 
 export const Icon = styled.div`
     position: absolute;
@@ -193,7 +197,7 @@ export const Icon = styled.div`
 export const SidebarWrapper = styled.div`
     color: #000;
     background: #AC5D5D;
-    
+
 `
 
 export const SidebarMenu = styled.ul`
@@ -205,7 +209,7 @@ export const SidebarMenu = styled.ul`
 
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6, 60px);
-        
+
     }
 
 `
@@ -222,7 +226,7 @@ export const SidebarLink = styled(LinkS)`
     color: #fff;
     cursor: pointer;
 
-    &:hover { 
+    &:hover {
         color: #E6BCCB;
         transition: 0.2s ease-in-out;
     }
@@ -231,7 +235,7 @@ export const SidebarLink = styled(LinkS)`
 export const SideBtnWrap = styled.div`
     display: grid;
     justify-content: center;
-    text-align: center;    
+    text-align: center;
     background: #AC5D5D;
 `
 
@@ -257,6 +261,10 @@ export const SidebarRoute = styled(LinkR)`
 
     }
 `
+
+/*Hero - Elements*/
+
+
 export const HeroContainer =styled.div`
     background: #fff;
     display: flex;
@@ -266,7 +274,7 @@ export const HeroContainer =styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
-   
+
     :before {
         content: '';
         position: absolute;
@@ -279,7 +287,7 @@ export const HeroContainer =styled.div`
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
     }
-` 
+`
 
 export const Herobg = styled.div`
     position: absolute;
@@ -290,7 +298,7 @@ export const Herobg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-` 
+`
 
 export const VideoBg = styled.video`
     width: 100%;
@@ -309,7 +317,7 @@ export const HeroContent = styled.div`
     align-items: center;
     background-color:Transparent;
 
-    
+
 `
 
 export const HeroH1 = styled.h1`
@@ -325,7 +333,7 @@ export const HeroH1 = styled.h1`
     @media screen and (max-width: 480px){
         font-size: 32px;
     }
-` 
+`
 
 export const HeroP = styled.p`
     margin-top: 24px;
@@ -350,17 +358,17 @@ export const HeroBtnWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     background-color:Transparent;
-    
-    
+
+
 `
 
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
     font-size: 20px;
     background: #AC5D5D;
-    
-    
-    
+
+
+
 
 `
 
@@ -369,7 +377,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size: 20px;
     background: #AC5D5D;
 
-    
+
 
 `
 
@@ -394,6 +402,8 @@ export const ButtonHero = styled(LinkS)`
         color: #CDB9B9;
     }
 `
+
+/* Información - Elementos */
 
 export const InfoContainer = styled.div`
     color:#fff;
@@ -428,7 +438,7 @@ export const InfoRow = styled.div`
     }
 `
 
-export const Column1 = styled.div` 
+export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
@@ -438,13 +448,13 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
-` 
+`
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
-` 
+`
 
 export const TopLine = styled.p`
     color: #AC5D5D;
@@ -454,14 +464,14 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-botto: 16px;
-` 
+`
 
 export const MenuIconS = styled(FaSplotch)`
     color: #AC5D5D;
     background: #fff;
     margin: 5px;
     margin-top: -2px;
-` 
+`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
@@ -488,7 +498,7 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
-    
+
 
 `
 
@@ -501,7 +511,7 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-` 
+`
 export const Button = styled(LinkR)`
     border-radius: 50px;
     background: #AC5D5D;
@@ -524,6 +534,9 @@ export const Button = styled(LinkR)`
     }
 `
 
+/*Productos Inicio - Elementos */
+
+
 export const ProductsContainer = styled.div`
     height: 800px;
     display: flex;
@@ -539,7 +552,7 @@ export const ProductsContainer = styled.div`
     @media screen and (max-width: 480px){
         height: 1300px;
     }
-` 
+`
 
 export const ProductsWrapper = styled.div`
     max-width: 1000px;
@@ -558,9 +571,9 @@ export const ProductsWrapper = styled.div`
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
-` 
+`
 
-export const ProductsCard = styled.div` 
+export const ProductsCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -600,19 +613,21 @@ export const StarIcon = styled(HiGift)`
     color: #fff;
     background: #AC5D5D;
     margin-top: -4px;
-` 
+`
 
 export const ProductsH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px:
-    
-    
+
+
 `
 
 export const ProductsP = styled.p`
     font-size: 0.5rem;
     text-align: center;
-` 
+`
+
+/*Servicios Inicio - Elementos */
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -629,7 +644,7 @@ export const ServicesContainer = styled.div`
     @media screen and (max-width: 480px){
         height: 1300px;
     }
-` 
+`
 
 export const ServicesWrapper = styled.div`
     max-width: 1000px;
@@ -648,9 +663,9 @@ export const ServicesWrapper = styled.div`
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
-` 
+`
 
-export const ServicesCard = styled.div` 
+export const ServicesCard = styled.div`
     background: #AC5D5D;
     display: flex;
     flex-direction: column;
@@ -674,7 +689,7 @@ export const ServicesIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
-    
+
 `
 
 export const ServicesH1 = styled.h1`
@@ -691,22 +706,23 @@ export const SparIcon = styled(HiSparkles)`
     color: #AC5D5D;
     background: #fff;
     margin-top: -4px;
-` 
+`
 
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
     color: #fff;
-    
-    
+
+
 `
 
 export const ServicesP = styled.p`
     font-size: 0.5rem;
     text-align: center;
     color: #fff;
-` 
+`
 
+/*Footer - Elementos */
 export const FooterContainer = styled.footer`
     background-color: #AC5D5D;
 `
@@ -747,13 +763,13 @@ export const FooterLinksItems = styled.div`
     width: 160px;
     box-sizing: border-box;
     color: #fff;
-    
+
     @media screen and (max-width: 420px){
         margin: 0;
         padding: 10px;
         width: 100%
     }
-` 
+`
 export const FooterLinkTitle = styled.h1`
     font-size: 14px;
     margin-bottom: 16px;
@@ -812,7 +828,7 @@ export const WebsiteRights = styled.small`
         color: #CDB9B6;
         transition: 0.3s ease-out;
     }
-` 
+`
 
 export const SocialIcons = styled.div`
     display: flex;
@@ -831,7 +847,7 @@ export const SocialIconLink = styled.a`
 
 `
 
-
+/*Inicio de sesión - Elementos */
 
 export const Container = styled.div`
     min-height: 692px;
@@ -843,18 +859,18 @@ export const Container = styled.div`
     z-index: 0;
     overflow: hidden;
     background: #AC5D5D;
-` 
+`
 
 export const FormWrap = styled.div`
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
 
         @media screen and (max-width: 400px){
             height: 80%;
         }
-` 
+`
 
 export const IconS = styled(LinkR)`
         margin-left: 32px;
@@ -880,7 +896,7 @@ export const FormContent = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
 
         @media screen and (max-width: 480px){
             padding: 10px;
@@ -902,7 +918,7 @@ export const Form = styled.form`
         @media screen and (max-width: 400px){
             padding: 32px 32px;
         }
-` 
+`
 
 export const FormH1 = styled.h1`
         margin-bottom: 40px;
@@ -926,7 +942,7 @@ export const FormInput = styled.input`
         color: #AC5D5D;
         border-style: solid;
         border-color: #CDB9B9;
-        
+
 `
 
 export const FormButton = styled.button`
@@ -947,8 +963,143 @@ export const Text = styled.a`
         color: #fff;
         font-size: 14px;
         cursor: pointer;
-        
+
         &:hover{
             color: #CDB9B9;
         }
-` 
+`
+
+/*Grupo Productos - Elementos */
+
+export const GPContenedor = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media screen and (max-width: 768px){
+        height: 100px;
+    }
+
+    @media screen and (max-width: 480px){
+        height: 1300px;
+    }
+`
+
+export const GPWrapper = styled.div`
+
+max-width: 1000px;
+margin: 0 auto;
+display: grid;
+justify-content: flex-start;
+grid-template-columns: 1fr 1fr 1fr ;
+align-items: center;
+grid-gap: 20px;
+padding: 0 20px;
+
+@media screen and (max-width: 1000px){
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px){
+    grid-template-columns: 1fr;
+    padding: 20 0px;
+}
+`
+
+
+export const GProductos = styled.div`
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 500px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+`
+
+export const GPHeader = styled.div`
+
+justify-content: center;
+align-items: center;
+text-align: center;
+color:#CDB9B9;
+background: #fff;
+font-weight: bold;
+
+`
+
+export const GPLink = styled(LinkR)`
+
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration:none;
+    &:hover {
+        color: #CDB9B9;
+        transition: 0.2s ease-in-out;
+    }
+
+`
+export const GPBody = styled.div`
+align-items: center;
+`
+export const GPPrice = styled.h4`
+align-items: center;
+text-align: center;
+justify-content: center;
+color: #CDB9B9;
+`
+export const GPStock = styled.h6`
+align-items: center;
+text-align: center;
+justify-content: center;
+color: #CDB9B9;
+`
+
+export const BtnRedirect = styled(LinkR)`
+border-radius: 50px;
+background: #AC5D5D;
+white-space: nowrap;
+padding: ${({big})=> (big ? '14px 48px' : '12px 30px')};
+color: #fff;
+font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+outline: none;
+border: none;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.2s ease-in-out;
+
+&:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #CDB9B9;
+}
+
+`
+
+export const GPFooter = styled.div`
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+`

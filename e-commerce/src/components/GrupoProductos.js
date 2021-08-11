@@ -1,32 +1,35 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import { GPContenedor, GProductos, GPWrapper,GPHeader,GPPrice,BtnRedirect,GPBody,GPFooter,GPLink,GPStock} from "./general"
 
 export default function GrupoProductos({productos}) {
     console.log(productos)
     return (
-        <div className="container">
-            <div className="row mt-3">
+        <GPContenedor>
+            <GPWrapper>
+
                 {productos.map((prod, i) => (
-                    <div className="col-6 col-lg-3" key={i}>
-                        <Link className="card mb-4" to={`/detalle/${prod.prod_id}`}>
-                            <div className="card-header">
+                    <GProductos key={i}>
+                        <GPLink className="card mb-4" to={`/detalle/${prod.prod_id}`}>
+                            <GPHeader className="card-header">
                                 {prod.prod_nombre}
-                            </div>
-                            <div className="card-body">
+                            </GPHeader>
+                            <GPBody className="card-body">
                                 <img
                                     src={prod.prod_imagen}
                                     className="card-img-top"
                                     alt={prod.prod_nombre}/>
-                                <h5 className="card-title">{prod.prod_descripcion}</h5>
-                                <span className="fw-bold">S/. {prod.prod_precio}</span>
-                            </div>
-                            <div className="card-footer text-muted">
-                                <a  className="btn btn-primary" to={`/detalle/${prod.prod_id}`} >¡Mira lo que contiene!</a>
-                            </div>
-                        </Link>
-                    </div>
+                                
+                                <GPPrice>S/. {prod.prod_precio}</GPPrice>
+                                <GPStock>Existen: {prod.prod_stock}</GPStock>
+                            </GPBody>
+                            <GPFooter className="card-footer text-muted">
+                                <BtnRedirect to={`/detalle/${prod.prod_id}`} >¡Mira lo que contiene!</BtnRedirect>
+                            </GPFooter>
+                        </GPLink>
+                    </GProductos>
                 ))}
-            </div>
-        </div>
+            </GPWrapper>
+        </GPContenedor>
      
     )}
