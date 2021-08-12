@@ -5,7 +5,6 @@ import GroupProducts from '../components/GroupProducts'
 
 export default function ProductosView() {
     const [productos,setProductos] = useState([])
-    const [productosOriginal, setProductosOriginal] = useState([])
     const [cargando, setCargando] = useState(true)
 
     const inputBusqueda = useRef()
