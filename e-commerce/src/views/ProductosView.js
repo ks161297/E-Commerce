@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from "react"
-import { obtenerProductos} from "../services/productoService"
+import { obtenerProductos} from "../services/productosService"
 import Loading from '../components/Loading'
 import GroupProducts from '../components/GroupProducts'
 
