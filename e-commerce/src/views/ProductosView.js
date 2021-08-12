@@ -13,7 +13,7 @@ export default function ProductosView() {
         try {
             const productosObtenidos = await obtenerProductos()
             setProductos(productosObtenidos)
-            setProductosOriginal(productosObtenidos)
+            // setProductosOriginal(productosObtenidos)
             setCargando(false)
         } catch (error) {
             console.error(error)
