@@ -53,7 +53,7 @@ const eliminarProducto = async (productoElimnado,id) =>{
         let {data} = await axios.delete(`${URL}/${id}`,productoElimnado)
         return data
     } catch (error) {
-        throw erro
+        throw error
     }
 }
 
