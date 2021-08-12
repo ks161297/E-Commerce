@@ -1,18 +1,17 @@
-import {Route} from "react-router-dom"
-import ListaProductosView from "./views/ListaProductosView"
-import CrearProductoView from "./views/CrearProductoView"
-import EditarProductoView from "./views/EditarProductoView"
-import ProductoView from "./views/ProductoView"
-import ProductosView from "./views/ProductosView"
 
-export default function Routes() {
-    return (
+import { Route } from "react-router";
+import PaginaInicio from './views/PaginaInicio'
+import PaginaProductos from './views/PaginaProductos'
+import Singin from "./views/Singin";
+import PaginaProducto from "./views/PaginaProducto";
+
+export default function Routes (){
+    return(
         <div>
-            <Route path="/" exact component={ListaProductosView} />
-            <Route path="/crear" exact component={CrearProductoView} />
-            <Route path="/editar/:id" exact component={EditarProductoView} />
-            <Route path="/detalle/:id" exact component={ProductoView}/>
-            <Route path="/productos" exact component={ProductosView}/>
+            <Route path="/" exact component={PaginaInicio}></Route>
+            <Route path="/singin" exact component={Singin}></Route>
+            <Route path="/detalle/:id" exact component={PaginaProducto}></Route>
+            <Route path="/productos" exact component={PaginaProductos}/>
         </div>
     )
 }
