@@ -45,6 +45,7 @@ const editarProducto = async (productoEditado,id) =>{
     }
 }
 
+
 const eliminarProducto = async (id) =>{
     // try {
     //     let {data} = await axios.delete(`${URL}/${id}`)
