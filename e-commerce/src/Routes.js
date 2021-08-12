@@ -1,3 +1,4 @@
+
 import { Route } from "react-router";
 import PaginaInicio from './views/PaginaInicio'
 import PaginaProductos from './views/PaginaProductos'
@@ -11,9 +12,6 @@ export default function Routes (){
             <Route path="/singin" exact component={Singin}></Route>
             <Route path="/detalle/:id" exact component={PaginaProducto}></Route>
             <Route path="/productos" exact component={PaginaProductos}/>
-           
-
-
         </div>
     )
 }

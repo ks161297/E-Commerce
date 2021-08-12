@@ -1,3 +1,4 @@
+
 export default function Loading() {
     return (
         <div style ={{
@@ -17,6 +18,7 @@ export default function Loading() {
                     top:'calc(50% - 50px)',
                     left:'calc(50% - 50px)' 
                 }}></i>
+
         </div>
     )
 }
