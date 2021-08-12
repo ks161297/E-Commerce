@@ -1,47 +1,26 @@
 import {useState, useEffect, useContext} from 'react'
-// import { CarritoContext } from '../context/carritoContext'
 import {useParams} from "react-router-dom"
-import {obtenerProductosPorId } from '../services/productoService'
+import {obtenerProductoPorId } from '../services/productosService'
 import Loading from '../components/Loading'
-import Swal from "sweetalert2"
 import {useHistory} from 'react-router'
 
 export default function ProductoView() {
     const [producto, setProductos] = useState({})
-    // const [cargando, setCargando] = useState(true)
+    const [cargando, setCargando] = useState(true)
 
     const {id} = useParams()
 
     const history = useHistory()
 
-    // const {anadirACarrito}= useContext(CarritoContext)
-
     const getProducto = async () =>{
         try {
-            let productosObtenido = await obtenerProductosPorId(id)
+            let productosObtenido = await obtenerProductoPorId(id)
             setProductos(productosObtenido)
             setCargando(false)
         } catch (error) {
             console.log(error)
         }
     }
-
-    // const anadirACarritoContext = async() =>{
-    //     anadirACarrito(producto)
-    //     const resultado = await Swal.fire({
-    //         icon:'success',
-    //         title:'Producto Añadido!',
-    //         showConfirmButton:true,
-    //         showDenyButton:true,
-    //         confirmButtonText:'Seguir comprando',
-    //         denyButtonText:'Ir a carrito'
-    //     })
-    //     if(resultado.isConfirmed){
-    //         history.push('/')
-    //     }else if(resultado.isDenied){
-    //         history.push('/carrito')
-    //     }
-    // }
 
     useEffect(() =>{
         getProducto()

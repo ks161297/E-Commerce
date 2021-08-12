@@ -45,14 +45,14 @@ const editarProducto = async (productoEditado,id) =>{
     }
 }
 
-const eliminarProducto = async (id) =>{
-    // try {
-    //     let {data} = await axios.delete(`${URL}/${id}`)
-    //     return data
-    // } catch (error) {
-    //     throw error
-    // }
-}
+// const eliminarProducto = async (id) =>{
+//     // try {
+//     //     let {data} = await axios.delete(`${URL}/${id}`)
+//     //     return data
+//     // } catch (error) {
+//     //     throw error
+//     // }
+// }
 
 
 const subirArchivo = (imagen) => {
@@ -78,6 +78,5 @@ export{
     crearProducto,
     obtenerProductoPorId,
     editarProducto,
-    eliminarProducto,
     subirArchivo
 }
