@@ -16,7 +16,7 @@ const InfoSection = () => {
                           <Heading>¿Estás buscando algo especial?</Heading>
                           <Subtitle>Aqui vas a encontrar los mejores regalos para esa persona especial, ¿Te interesa? </Subtitle>
                           <BtnWrap>
-                              <Button to="home">¡Comencemos con está experiencia!</Button>
+                              <Button to='/productos'>¡Comencemos con está experiencia!</Button>
                           </BtnWrap>
                       </TextWrapper>
                       </Column1>

@@ -5,9 +5,8 @@ import { GPContenedor, GProductos, GPWrapper,GPHeader,GPPrice,BtnRedirect,GPBody
 export default function GrupoProductos({productos}) {
     console.log(productos)
     return (
-        <GPContenedor>
+        <GPContenedor >
             <GPWrapper>
-
                 {productos.map((prod, i) => (
                     <GProductos key={i}>
                         <GPLink className="card mb-4" to={`/detalle/${prod.prod_id}`}>

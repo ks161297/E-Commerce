@@ -3,8 +3,6 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/storage';
 
-
-
 const config = {
     apiKey: process.env.REACT_APP_API_KEY ,
     authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -17,7 +15,10 @@ const config = {
 const fire = firebase.initializeApp(config)
 const storage = firebase.storage()
 const auth = firebase.auth()
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 export {
     fire,
     storage,

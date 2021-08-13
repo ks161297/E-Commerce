@@ -343,13 +343,7 @@ export const HeroP = styled.p`
     max-width: 600px;
     background-color:Transparent;
 
-    @media screen and (max-width: 760px){
-        font-size: 24px;
-    }
-
-    @media screen and (max-width: 480px){
-        font-size: 18px;
-    }
+    c
 `
 
 export const HeroBtnWrapper = styled.div`
@@ -381,7 +375,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 `
 
-export const ButtonHero = styled(LinkS)`
+export const ButtonHero = styled(LinkR)`
     border-radius: 50px;
     background: #AC5D5D;
     white-space: nowrap;
@@ -615,9 +609,18 @@ export const StarIcon = styled(HiGift)`
     margin-top: -4px;
 `
 
-export const ProductsH2 = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px:
+export const ProductsH2 = styled(LinkR)`
+color: #000;
+cursor: pointer;
+font-size: 1rem;
+display: flex;
+align-items: center;
+font-weight: bold;
+text-decoration:none;
+&:hover {
+    color: #CDB9B9;
+    transition: 0.2s ease-in-out;
+}
 
 
 `
@@ -708,10 +711,19 @@ export const SparIcon = styled(HiSparkles)`
     margin-top: -4px;
 `
 
-export const ServicesH2 = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #fff;
+export const ServicesH2 = styled(LinkR)`
+color: #fff;
+cursor: pointer;
+font-size: 1rem;
+display: flex;
+align-items: center;
+font-weight: bold;
+text-decoration:none;
+&:hover {
+    color: #CDB9B9;
+    transition: 0.2s ease-in-out;
+}
+
 
 
 `
@@ -993,7 +1005,7 @@ export const GPWrapper = styled.div`
 max-width: 1000px;
 margin: 0 auto;
 display: grid;
-justify-content: flex-start;
+
 grid-template-columns: 1fr 1fr 1fr ;
 align-items: center;
 grid-gap: 20px;
