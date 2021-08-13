@@ -47,15 +47,17 @@ export default function ProductoView() {
                                 <span className="fw-bold">
                                     S/ {producto.prod_precio}
                                 </span>
-
+                            </div>
+                        </div>
+                        <div className="col-sm-12 col-md-6">
                                 <button className="btn btn-dark btn-lg"
                                 
                                 >
                                     <li className="fas fa-shopping-cart me-2"/>
                                     Agregar a Carrito
                                 </button>
-                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>)} 
