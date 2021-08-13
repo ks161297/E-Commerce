@@ -39,12 +39,12 @@ export default function ProductosView() {
             (<Loading/>) :
             (<div className="py-4">
                 <div className="container text-center">
-                    <h2><i className="fas fa-gifts" />
-                        Catálogo de Productos
+                    <h2 style={{color:'#BF7C7C'}}>
+                        Tienda de Productos
                     </h2>
                     <div className="row my-2">
                         <div className="col-sm-12 col-md-6">
-                            <h5>Buscar producto:</h5>
+                            <h5 style={{color:'#AC5D5D'}}>Buscar Producto:</h5>
                             <div className="d-flex gap-1">
                                 <input 
                                     type="text" 
