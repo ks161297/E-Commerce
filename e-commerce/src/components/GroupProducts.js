@@ -14,7 +14,7 @@ export default function GroupProducts({productos}) {
                                 className="card-img-top"
                                 alt={prod.prod_nombre}
                             />
-                            <div className="card-body">
+                            <div className="card-body text-center" style={{backgroundColor:'#C89696',color:'white'}}>
                                 <h6 className="card-title">
                                     {prod.prod_nombre}
                                 </h6>

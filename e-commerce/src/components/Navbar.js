@@ -40,7 +40,7 @@ const Navbar = ({toggle}) => {
                    </MobileIcon>
                    <NavMenu>
                        <NavItem>
-                           <NavLinks to='about'
+                           <NavLinks to='/'
                            smooth={true}
                            duration={10}
                            spy={true}

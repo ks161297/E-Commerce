@@ -50,11 +50,18 @@ export default function ProductoView() {
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6">
-                                <button className="btn btn-dark btn-lg"
-                                
+                                <button className="btn  btn-lg"
+                                        style={{color:'white',backgroundColor:'#CDB9B9'}}
                                 >
                                     <li className="fas fa-shopping-cart me-2"/>
                                     Agregar a Carrito
+                                </button>
+                                <button className="btn  btn-lg"
+                                        style={{color:'white',backgroundColor:'#AC5D5D'}}
+                                
+                                >
+                                    <li className="fas fa-heart me-2"/>
+                                    Agregar a Favoritos
                                 </button>
                         </div>
 

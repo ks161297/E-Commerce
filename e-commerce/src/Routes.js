@@ -5,7 +5,7 @@ import PaginaProductos from './views/PaginaProductos'
 import Singin from "./views/Singin";
 import PaginaProducto from "./views/PaginaProducto";
 import ListaProductosView from "./views/ListaProductosView"
-import CrearProductoView from "./views/CearProductoView"
+import CrearProductoView from "./views/CrearProductoView"
 import EditarProductoView from "./views/EditarProductoView"
 
 export default function Routes (){
