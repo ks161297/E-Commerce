@@ -44,7 +44,6 @@ const editarProducto = async (productoEditado,id) =>{
         throw error
     }
 }
-
 // const eliminarProducto = async (id) =>{
 //     // try {
 //     //     let {data} = await axios.delete(`${URL}/${id}`)
@@ -52,7 +51,7 @@ const editarProducto = async (productoEditado,id) =>{
 //     // } catch (error) {
 //     //     throw error
 //     // }
-// }
+
 
 
 const subirArchivo = (imagen) => {
