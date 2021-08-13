@@ -24,7 +24,7 @@ const crearProducto = async (nuevoProducto) => {
     }
 }
 
-const obtenerProductoPorId = async (id) => {
+const obtenerProductosPorId = async (id) => {
     try {
         let {data} = await axios.get(`${URL}/${id}`)
         return data
@@ -45,17 +45,17 @@ const editarProducto = async (productoEditado,id) =>{
     }
 }
 
-const eliminarProducto = async (productoElimnado,id) =>{
-    try {
-        const headers = {
-            "Content-Type": "application/json"
-        }
-        let {data} = await axios.delete(`${URL}/${id}`,productoElimnado)
-        return data
-    } catch (error) {
-        throw error
-    }
-}
+// const eliminarProducto = async (productoElimnado,id) =>{
+//     try {
+//         const headers = {
+//             "Content-Type": "application/json"
+//         }
+//         let {data} = await axios.delete(`${URL}/${id}`,productoElimnado)
+//         return data
+//     } catch (error) {
+//         throw error
+//     }
+// }
 
 
 const subirArchivo = (imagen) => {
@@ -79,8 +79,7 @@ const subirArchivo = (imagen) => {
 export{
     obtenerProductos,
     crearProducto,
-    obtenerProductoPorId,
+    obtenerProductosPorId,
     editarProducto,
-    eliminarProducto,
     subirArchivo
 }
