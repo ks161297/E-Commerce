@@ -8,6 +8,11 @@ const SignIn = () => {
                 <IconS to="/">Handmade</IconS>
                 <FormContent>
                     <Form action="#">
+                        <FormButton type='submit' onClick={SignIn}>
+                            <i className="fab fa-google me-2"/>
+                            Ingresa con google
+                        </FormButton>
+                        ó
                         <FormH1>Ingresa a tu cuenta</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
                         <FormInput type='email' required/>
