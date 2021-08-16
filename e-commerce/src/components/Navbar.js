@@ -64,12 +64,12 @@ const Navbar = ({toggle}) => {
                            offset={-80}>Tips</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Contáctanos'
+                           <NavLinks to='/contactenos'
                            smooth={true}
                            duration={10}
                            spy={true}
                            exact='true'
-                           offset={-80}>Nosotros</NavLinks>
+                           offset={-80}>Contáctenos</NavLinks>
                        </NavItem>
                     
                    </NavMenu>

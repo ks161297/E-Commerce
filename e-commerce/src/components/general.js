@@ -1103,3 +1103,57 @@ export const GPFooter = styled.div`
     justify-content: center;
     text-align: center;
 `
+// CONTACTO
+
+export const Contacto = styled.div`
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+    background-color:#C89696;
+`
+export const Contenido = styled.div`
+    width:50%;
+    display:flex;
+    flex-direction:column;
+`
+
+export const Info = styled.div`
+    position:relative;
+    padding:20px 0;
+    display:flex;
+`
+
+export const Icono = styled.div`
+    min-width:60px;
+    height:60px;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:22px
+`
+export const Texto = styled.div`
+    display:flex;
+    margin-left:20px;
+    font-size:16px;
+    color:#fff;
+    flex-direction:column;
+    font-weight:300;   
+`
+export const ContactForm = styled.div`
+    width:40%;
+    padding:40px;
+    background:#fff;
+
+`
+export const InputBox = styled.div`
+    position:relative;
+    width:100%;
+    margin-top:10px;
+`
+
+
+
