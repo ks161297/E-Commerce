@@ -60,9 +60,10 @@ export default function PaginaProductos() {
             (<Loading/>) :
             (<div className="py-4">
                 <div className="container text-center">
-                    <h1 className="my-4">
+                    <h1 className="my-4" style={{color:'#BF7C7C'}}>
                         <FaGifts/>
-                        Nuestros Productos
+                        
+                        Catálogo
                     </h1>
                     <div className="row my-2">
                        <div className="col-sm-12 col-md-6">
