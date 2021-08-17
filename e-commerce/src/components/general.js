@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
-import {Link as LinkS} from 'react-scroll'
-import {FaTimes} from 'react-icons/fa'
+import { Link as LinkS } from 'react-scroll'
+import { FaTimes } from 'react-icons/fa'
 import { FaBars, FaCartArrowDown, FaHeart, FaUser, FaUserPlus } from 'react-icons/fa'
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
 import { FaSplotch } from 'react-icons/fa'
-import {HiSparkles} from 'react-icons/hi'
+import { HiSparkles } from 'react-icons/hi'
 import { HiGift } from 'react-icons/hi'
 
 /*Navbar - Elementos*/
@@ -77,7 +77,7 @@ export const MobileIcon = styled.div`
         color: #FFF;
     }
 `
-export const NavMenu = styled.ul `
+export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
     list-style: none;
@@ -265,7 +265,7 @@ export const SidebarRoute = styled(LinkR)`
 /*Hero - Elements*/
 
 
-export const HeroContainer =styled.div`
+export const HeroContainer = styled.div`
     background: #fff;
     display: flex;
     justify-content: center;
@@ -385,9 +385,9 @@ export const ButtonHero = styled(LinkS)`
     border-radius: 50px;
     background: #AC5D5D;
     white-space: nowrap;
-    padding: ${({big})=> (big ? '14px 48px' : '12px 30px')};
+    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
     color: #fff;
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
     cursor: pointer;
@@ -431,10 +431,10 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
-        grid-template areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col1 col1'`)};
+        grid-template areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col1 col1'`)};
     }
 `
 
@@ -516,9 +516,9 @@ export const Button = styled(LinkR)`
     border-radius: 50px;
     background: #AC5D5D;
     white-space: nowrap;
-    padding: ${({big})=> (big ? '14px 48px' : '12px 30px')};
+    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
     color: #fff;
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
     cursor: pointer;
@@ -1078,9 +1078,9 @@ export const BtnRedirect = styled(LinkR)`
 border-radius: 50px;
 background: #AC5D5D;
 white-space: nowrap;
-padding: ${({big})=> (big ? '14px 48px' : '12px 30px')};
+padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
 color: #fff;
-font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
 outline: none;
 border: none;
 cursor: pointer;
@@ -1105,13 +1105,25 @@ export const GPFooter = styled.div`
 `
 // CONTACTO
 
+export const ContactPrincipal = styled.div`
+    position:relative;
+    padding:50px 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:#C89696;
+`
+export const TitleContact = styled.div`
+    max-width:800px;
+    text-align:center;
+`
 export const Contacto = styled.div`
     width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
     margin-top:30px;
-    background-color:#C89696;
 `
 export const Contenido = styled.div`
     width:50%;
@@ -1135,14 +1147,16 @@ export const Icono = styled.div`
     border-radius:50%;
     font-size:22px
 `
-export const Texto = styled.div`
+export const TextContact = styled.div`
     display:flex;
     margin-left:20px;
     font-size:16px;
     color:#fff;
     flex-direction:column;
-    font-weight:300;   
+    font-weight:300;
+  
 `
+
 export const ContactForm = styled.div`
     width:40%;
     padding:40px;
@@ -1154,6 +1168,45 @@ export const InputBox = styled.div`
     width:100%;
     margin-top:10px;
 `
+export const Label = styled.label`
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #BF7C7C;
+`
+export const Input = styled.input`
+    padding: 10px 10px;
+    width:100%;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    color: #AC5D5D;
+    border-style: solid;
+    border-color: #CDB9B9;
+
+`
+export const TextArea = styled.textarea`
+    padding: 10px 10px;
+    width:100%;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    color: #AC5D5D;
+    border-style: solid;
+    border-color: #CDB9B9;
+
+`
+export const Buttom = styled.button`
+    background: #AC5D5D;
+    padding: 7px 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #CDB9B9;
+`
+
 
 
 

@@ -1,62 +1,64 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import {Contacto,Contenido,Info,Icono,Texto,ContactForm,InputBox} from './general'
+import {Contacto,Contenido,Info,Icono,ContactForm,InputBox,Label,Input,TextArea, Buttom,TitleContact, ContactPrincipal, TextContact} from './general'
 
 export default function ContactoView() {
     return (
-        <div>
-            <h2>Contáctenos</h2>
+        <ContactPrincipal>
+            <TitleContact>
+                <h2 className="fw-bold" style={{color:'#fff'}}>Contáctenos</h2>
+            </TitleContact>
             <Contacto>
                 <Contenido>
                     <Info>
                         <Icono>
                             <i className="fas fa-map-marker-alt" />
                         </Icono>
-                        <Texto>
+                        <TextContact>
                             <h3>Dirección</h3>
                             <p>Av.Miraflores 3562</p>
-                        </Texto>
+                        </TextContact>
                     </Info>
                     <Info>
                         <Icono>
                             <i className="fas fa-envelope" />
                         </Icono>
-                        <Texto>
+                        <TextContact>
                             <h3>Correo</h3>
                             <p>handmadeM&A@hotmail.com</p>
-                        </Texto>
+                        </TextContact>
                     </Info>
                     <Info>
                         <Icono>
                             <i className="fas fa-phone" />
                         </Icono>
-                        <Texto>
+                        <TextContact>
                             <h3>Celular</h3>
                             <p>995654526</p>
-                        </Texto>
+                        </TextContact>
                     </Info>
                 </Contenido>
                 <ContactForm>
                     <form>
                         <InputBox>
-                            <label>Nombre y Apellido:</label>
-                            <input />
+                            <Label>Nombre y Apellido:</Label>
+                            <Input />
                         </InputBox>
                         <InputBox>
-                            <label>Correo Electrónico:</label>
-                            <input />
+                            <Label>Correo Electrónico:</Label>
+                            <Input />
                         </InputBox>
                         <InputBox>
-                            <label>Asunto:</label>
-                            <input />
+                            <Label>Asunto:</Label>
+                            <TextArea/>
                         </InputBox>
                         <InputBox>
-                            <button>Enviar</button>
+                            <Buttom>Enviar</Buttom>
                         </InputBox>
                     </form>
                 </ContactForm>
 
             </Contacto>
-        </div>
+        </ContactPrincipal>
     )
 }
