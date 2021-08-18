@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react'
-import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
-import Services from '../components/Services'
 import Products from '../components/Products'
+import Services from '../components/Services'
 import Footer from '../components/Footer'
-
-
 
 const PaginaInicio = () => {
     const [isOpen, setIsOpen] = useState(false)

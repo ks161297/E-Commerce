@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import {Nav, NavbarContainer, NavLogo, Navimg,  MenuIcon, MobileIcon, NavMenu, NavItem,NavLinks, NavBtn, NavBtnLink, NavIngr,NavRegi,Navlist,Navcar} from './general'
 import logo from '../images/logoprincipal.png'
 import { IconContext } from 'react-icons/lib'
+
 import { animateScroll as scroll} from 'react-scroll'
 
 const Navbar = ({toggle}) => {
-
     const [scrollNav, setScrollNav] = useState(false)
     const changeNav = () => {
         if(window.scrollY >= 40){

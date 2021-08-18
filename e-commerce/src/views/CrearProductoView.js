@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useHistory} from "react-router-dom"
 import Swal from "sweetalert2"
 
-import { crearProducto,subirArchivo} from "../services/productosService"
+import { crearProducto,subirArchivo} from "../services/productoService"
 import FormProducto from "../components/FormProducto"
 
 

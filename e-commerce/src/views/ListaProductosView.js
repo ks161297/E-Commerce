@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import { obtenerProductos } from '../services/productosService'
+import { obtenerProductos } from '../services/productoService'
 import './estilos.css';
 
 export default function ListaProductosView() {

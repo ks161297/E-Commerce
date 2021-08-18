@@ -25,7 +25,6 @@ const auth = firebase.auth()
 export {
     fire,
     storage,
-
     firebase, 
     auth
 
