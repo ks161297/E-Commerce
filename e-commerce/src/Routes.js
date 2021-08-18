@@ -8,6 +8,8 @@ import CrearProductoView from "./views/CrearProductoView"
 import EditarProductoView from "./views/EditarProductoView"
 import PaginaCarrito from "./views/PaginaCarrito"
 import PaginaListaD from "./views/PaginaListaD"
+import ContactoView from "./views/ContactoView"
+
 
 export default function Routes (){
     return(
@@ -21,6 +23,7 @@ export default function Routes (){
             <Route path="/editar/:id" exact component={EditarProductoView} />
             <Route path="/carrito" exact component={PaginaCarrito} />
             <Route path="/lista" exact component={PaginaListaD} />
+            <Route path="/contacto" exact component={ContactoView}/>
 
 
         </div>

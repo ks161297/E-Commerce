@@ -13,7 +13,7 @@ export default function Loading() {
         }}>
             <i className="fas fa-spinner fa-spin fa-6x"
                 style={{
-                    color:'red',
+                    color:'#BF7C7C',
                     position: 'absolute',
                     top:'calc(50% - 50px)',
                     left:'calc(50% - 50px)' 

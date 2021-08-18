@@ -5,19 +5,16 @@ import {AuthContextProvider} from "./context/authContext"
 import CarritoContextProvider from './context/carritoContext';
 import ListaContextProvider from './context/listaContext';
 
-
-
-
 function App() {
   return (
     <Router>
       <AuthContextProvider>
         <CarritoContextProvider>
           <ListaContextProvider>
-        <Switch>
-          <Routes/>
-        </Switch>
-        </ListaContextProvider>
+            <Switch>
+              <Routes/>
+            </Switch>
+          </ListaContextProvider>
         </CarritoContextProvider>
       </AuthContextProvider>
     </Router>

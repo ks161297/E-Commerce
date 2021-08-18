@@ -1,11 +1,12 @@
 import { useState, useEffect, useContext } from 'react'
+import { AuthContext } from "../context/authContext";
 import {Nav, NavbarContainer, NavLogo, Navimg,  MenuIcon, MobileIcon, NavMenu, NavItem,NavLinks, NavBtn, NavBtnLink, NavIngr,NavRegi,Navlist,Navcar} from './general'
 import logo from '../images/logoprincipal.png'
 import { IconContext } from 'react-icons/lib'
-
 import { animateScroll as scroll} from 'react-scroll'
-
+import { NavDropdown } from 'react-bootstrap'
 const Navbar = ({toggle}) => {
+    const { userState, signOut } = useContext(AuthContext)
     const [scrollNav, setScrollNav] = useState(false)
     const changeNav = () => {
         if(window.scrollY >= 40){
@@ -64,19 +65,39 @@ const Navbar = ({toggle}) => {
                            offset={-80}>Tips</NavLinks>
                        </NavItem>
                        <NavItem>
-                           <NavLinks to='Contáctanos'
+                           <NavLinks to='/contactenos'
                            smooth={true}
                            duration={10}
                            spy={true}
                            exact='true'
-                           offset={-80}>Nosotros</NavLinks>
+                           offset={-80}>Contáctenos</NavLinks>
                        </NavItem>
                     
                    </NavMenu>
                    <NavBtn>
-                       <NavBtnLink to='/singin'>
-                           <NavIngr/>
-                       </NavBtnLink>
+                       {userState ? (
+                           <NavDropdown
+                                title={
+                                    <div className="d-inline">
+                                        <img
+                                            src={userState.photoURL}
+                                            className="me-2"
+                                            style={{borderRadius:"50%", width:"30px"}}
+                                            alt="avatar"
+                                        />
+                                        <span style={{color:'#fff'}}>{userState.displayName}</span>
+                                    </div>
+                                }
+                            >
+                                <NavDropdown.Item style={{color:'#fff', background:'#AC5D5D'}} onClick={signOut}>
+                                    Cerrar Sesión
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        ): (
+                            <NavBtnLink to='/singin'>
+                                <NavIngr/>
+                            </NavBtnLink>
+                        )}
                        <NavBtnLink to='/registrarse'>
                            <NavRegi/>
                        </NavBtnLink>
