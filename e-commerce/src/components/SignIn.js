@@ -15,6 +15,7 @@ const SignIn = () => {
                             <i className="fab fa-google me-2"/>
                             Ingresa con google
                         </FormButton>
+            
                         <span className="text-center m-2"style={{color:'white'}}>ó</span>
                         <FormH1>Ingresa a tu cuenta</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>

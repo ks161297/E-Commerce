@@ -1,25 +1,22 @@
 import { useState, useEffect, useRef } from 'react'
 import { obtenerProductos } from '../services/productoService'
-import Loading from '../components/Loading'
 import GrupoProductos from '../components/GrupoProductos';
 import Slider from '@material-ui/core/Slider';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar'
 import { IconGiftF,ProdTitle } from './Styles';
-
 import { FaSearch } from 'react-icons/fa';
+import CircularStatic from '../components/Cargando'
 
 export default function PaginaProductos() {
     const [productos, setProductos] = useState([])
     const [productosOriginal, setProductosOriginal] = useState([])
     const [cargando, setCargando] = useState(true)
     const [filtroPrecio, setFiltroPrecio] = useState([1, 100])
-
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => {
         setIsOpen(!isOpen)
     }
-
     const inputBusqueda = useRef()
 
     const getProductos = async () => {
@@ -36,7 +33,6 @@ export default function PaginaProductos() {
     const manejarPrecio = (evento, nuevosPrecios) => {
         setFiltroPrecio(nuevosPrecios)
     }
-
     const ejecutarBusqueda = async () => {
         let miBusqueda = inputBusqueda.current.value
         const productosFiltrados = await obtenerProductos(miBusqueda)
@@ -53,17 +49,13 @@ export default function PaginaProductos() {
         })
         setProductos(productosFiltrados)
     }, [filtroPrecio])
-
-    
-    
-    
     return (
         
         <div>
             <Navbar toggle={toggle}/>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             {cargando ? 
-            (<Loading/>) :
+            (<CircularStatic/>) :
             (<div className="py-4">
                 <div className="container text-center">
                     <ProdTitle>

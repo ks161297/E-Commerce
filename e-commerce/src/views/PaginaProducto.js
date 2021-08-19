@@ -3,7 +3,7 @@ import {CarritoContext} from '../context/carritoContext'
 import { ListaContext } from '../context/listaContext'
 import {useParams} from "react-router-dom"
 import { obtenerProductosPorId } from '../services/productoService'
-import Loading from '../components/Loading'
+import CircularStatic from '../components/Cargando'
 import Swal from "sweetalert2"
 import { useHistory } from 'react-router'
 import { DetProContainer, DetFIlas, ImagenContainer, ImagenProd, ContainerBody, CardBody, DeTitulo,DeDescr,DetPrecio,BtnContainer,DetButton, IconCarrito, IconLista } from './Styles'
@@ -111,7 +111,7 @@ export default function ProductoView(props) {
            <Navbar toggle={toggle}/>
            <Sidebar isOpen={isOpen} toggle={toggle}/>
            {cargando ? 
-           (<Loading />) : 
+           (<CircularStatic />) : 
            (<DetProContainer className="container">
                <DetFIlas className="row no-gutters">
                    <ImagenContainer className="col-md-8">

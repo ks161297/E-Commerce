@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import {Contacto,Contenido,Info,Icono,ContactForm,InputBox,Label,Input,TextArea, Buttom,TitleContact, ContactPrincipal, TextContact} from './general'
 
 export default function ContactoView() {

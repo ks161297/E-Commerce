@@ -1,11 +1,8 @@
 import { useState, useEffect, createContext } from "react";
-
 import { fire, auth, firebase } from "../config/Firebase";
-
 import Loading from "../components/Loading";
 
 const proveedorGoogle = new firebase.auth.GoogleAuthProvider()
-
 export const AuthContext = createContext()
 
 export const AuthContextProvider = (props) => {
